@@ -1,30 +1,28 @@
-import './App.css';
-import { TwitterFollowCard } from './TwitterFollowCard';
-export function App(params) {
-  const format = (userName) => `@${userName}`;
-
+import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard'
+export function App (params) {
   const users = [
     {
       userName: 'minudev',
       name: 'Miguel Angel Duran',
-      isFollowing: true,
+      isFollowing: true
     },
     {
       userName: 'elazaro',
       name: 'Edgar Lazaro Roldan',
-      isFollowing: true,
+      isFollowing: true
     },
     {
       userName: 'PacoHdezs',
       name: 'Paco Hdezs',
-      isFollowing: true,
+      isFollowing: true
     },
     {
       userName: 'TMChein',
       name: 'Tomas',
-      isFollowing: false,
-    },
-  ];
+      isFollowing: false
+    }
+  ]
 
   return (
     <section className='App'>
@@ -38,5 +36,5 @@ export function App(params) {
         </TwitterFollowCard>
       ))}
     </section>
-  );
+  )
 }
